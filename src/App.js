@@ -1,5 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
+import DisplayJohn from "./components/DisplayJohn";
+import { JohnProfile } from "./components/JohnProfile ";
 
 import { ChakraProvider } from "@chakra-ui/react";
 import { Stack, Button, Spinner, Input } from "@chakra-ui/react";
@@ -28,6 +30,9 @@ function App() {
         <Input variant="flushed" placeholder="Flushed" />
         <Input variant="unstyled" placeholder="Unstyled" />
       </Stack>
+
+      <DisplayJohn />
+      <JohnProfile />
     </ChakraProvider>
   );
 }
