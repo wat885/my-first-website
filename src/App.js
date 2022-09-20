@@ -3,12 +3,11 @@ import "./App.css";
 import DisplayJohn from "./components/DisplayJohn";
 import { JohnProfile } from "./components/JohnProfile ";
 
-import { ChakraProvider } from "@chakra-ui/react";
 import { Stack, Button, Spinner, Input } from "@chakra-ui/react";
 
 function App() {
   return (
-    <ChakraProvider>
+    <div>
       <Button colorScheme="telegram" size="xs">
         Button
       </Button>
@@ -33,7 +32,7 @@ function App() {
 
       <DisplayJohn />
       <JohnProfile />
-    </ChakraProvider>
+    </div>
   );
 }
 
